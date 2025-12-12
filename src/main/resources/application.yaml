@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: jpaorder
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jpaorders
+    username: postgres
+    password: ${PG_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+      properties.hibernate.format_sql: true
