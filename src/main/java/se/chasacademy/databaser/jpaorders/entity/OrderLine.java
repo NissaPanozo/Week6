@@ -34,6 +34,13 @@ public class OrderLine {
     @Column(name = "LINE_TOTAL_CENTS", nullable = false)
     private Integer lineTotalCents;
 
+    public OrderLine(OrderEntity order, Product product, int quantity) {
+    }
+
+    public OrderLine() {
+
+    }
+
     // getters/setters
 }
 

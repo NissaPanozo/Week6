@@ -2,6 +2,7 @@ package se.chasacademy.databaser.jpaorders.entity;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Table(name = "T_ORDER")
@@ -24,6 +25,16 @@ public class OrderEntity {
 
     @Column(name = "STATUS_CODE", nullable = false, length = 20)
     private String statusCode;
+
+    public OrderEntity(Customer customer) {
+    }
+
+    public OrderEntity() {
+
+    }
+
+    public void setOrderLines(List<OrderLine> lines) {
+    }
 
     // getters/setters
 }
